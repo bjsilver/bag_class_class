@@ -14652,8 +14652,7 @@ div.jp-OutputPrompt {
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Simple-example">Simple example<a class="anchor-link" href="#Simple-example">&#182;</a></h2><p>Let's create a class to represent a person
-We will give them some attributes</p>
+<h2 id="Simple-example">Simple example<a class="anchor-link" href="#Simple-example">&#182;</a></h2><p>Let's create a class to represent a person and give them some attributes</p>
 
 </div>
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14695,9 +14694,17 @@ We will give them some attributes</p>
 
 </div>
 
-</div></div></section><section>- In our blueprint for a person we defined them as a homo sapiens with two legs
-- But how about creating a specific person, i.e. creating an instance of a class
-- We need to expand the `Person` definition to include initial arguments, for this we add an `__init__` method<div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>In our blueprint for a person we defined them as a homo sapiens with two legs</li>
+<li>But how about creating a specific person, i.e. creating an instance of a class</li>
+<li>We need to expand the <code>Person</code> definition to include initial arguments, for this we add an <code>__init__</code> method</li>
+</ul>
+
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
@@ -14754,10 +14761,10 @@ it is called Ben and it is 27 years old
 <p>let's give it the ability to speak</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">():</span>
@@ -14780,8 +14787,20 @@ it is called Ben and it is 27 years old
 
 <span class="c1"># ask it how it is</span>
 <span class="n">person</span><span class="o">.</span><span class="n">ask</span><span class="p">(</span><span class="s1">&#39;how are you?&#39;</span><span class="p">)</span>
+</pre></div>
 
-<span class="c1"># ask it to identify itself</span>
+     </div>
+</div>
+</div>
+</div>
+
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ask it to identify itself</span>
 <span class="n">person</span><span class="o">.</span><span class="n">ask</span><span class="p">(</span><span class="s1">&#39;please identify yourself&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -14859,7 +14878,7 @@ I am called Ben and I am 27 years old
 </div></div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="More-useful-example">More useful example<a class="anchor-link" href="#More-useful-example">&#182;</a></h2><p>Let's say we have a dataset of tree observations and we want to create a tree class to store the data</p>
+<h2 id="More-useful-example">More useful example<a class="anchor-link" href="#More-useful-example">&#182;</a></h2><p>Let's say we have a dataset of tree observations and we want to create a <code>Tree</code> class to store the data</p>
 
 </div>
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14883,7 +14902,7 @@ I am called Ben and I am 27 years old
 </div></div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We create a blueprint for a tree, which is initialised with species, height and diameter at breast height (dbh)</p>
+<p>We create a blueprint for a tree, which is initialised with <strong>species</strong>, <strong>height</strong> and <strong>diameter at breast height (dbh)</strong></p>
 
 </div>
 </div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
